@@ -22,7 +22,16 @@
 
                 Console.WriteLine("Calculated result: " + result);
 
-                Console.Write("Would you like to run the program again? (y/n): ");
+                if (result > 10)
+                {
+                    Console.WriteLine("The result is greater than 10.");
+                }
+                else
+                {
+                    Console.WriteLine("The result is 10 or less.");
+                }
+
+                    Console.Write("Would you like to run the program again? (y/n): ");
                 string answer = Console.ReadLine();
 
                 runAgain = (answer == "y" || answer == "Y");
