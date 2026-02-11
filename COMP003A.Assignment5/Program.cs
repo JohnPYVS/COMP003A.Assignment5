@@ -46,6 +46,13 @@
                 Console.WriteLine("Welcome to the Program Organizer!");
                 Console.WriteLine();
             }
+
+            static void DisplayUserInput(string userName, int userNumber)
+            {
+                Console.WriteLine();
+                Console.WriteLine("You entered Name: " + userName + ", Number: " + userNumber);
+                Console.WriteLine();
+            }
         }
     }
 }
