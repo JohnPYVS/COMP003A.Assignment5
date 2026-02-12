@@ -50,7 +50,7 @@
             Console.WriteLine("Program ended.");
             
             // This shows the program introduction message
-            // It only prints its own message
+            // Scope: It only prints its own message
             static void DisplayIntroduction()
             {
                 Console.WriteLine("Welcome to the Program Organizer!");
@@ -58,7 +58,7 @@
             }
 
             // This is to pass multiple values into a method using parameters
-            // Only parameters, and not variables from Main
+            // Scope: Only parameters, and not variables from Main
             static void DisplayUserInput(string userName, int userNumber)
             {
                 Console.WriteLine();
@@ -66,7 +66,7 @@
                 Console.WriteLine();
             }
             
-            // This is to calculate using the numeric value and to retun the result
+            // Scope: This is to calculate using the numeric value and to retun the result in Main
             static int CalculateResult(int value)
             {
                 int calculated = value * 2;
