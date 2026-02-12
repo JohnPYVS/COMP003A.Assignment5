@@ -13,7 +13,7 @@
                 Console.Write("Enter your name: ");
                 string name = Console.ReadLine();
 
-                Console.Write("Enter a whole number:");
+                Console.Write("Enter a number: ");
                 int number = int.Parse(Console.ReadLine());
 
                 DisplayUserInput(name, number);
@@ -31,16 +31,16 @@
                     Console.WriteLine("The result is 10 or less.");
                 }
 
-                    Console.Write("Would you like to run the program again? (y/n): ");
+                Console.Write("Would you like to run the program again? (y/n): ");
                 string answer = Console.ReadLine();
 
-                runAgain = (answer == "y" || answer == "Y");
+                runAgain = (answer.ToLower() == "y");
                 Console.WriteLine();
-
-                Console.WriteLine("Program ended.");
 
             }
 
+            Console.WriteLine("Program ended.");
+            
             static void DisplayIntroduction()
             {
                 Console.WriteLine("Welcome to the Program Organizer!");
@@ -52,6 +52,12 @@
                 Console.WriteLine();
                 Console.WriteLine("You entered Name: " + userName + ", Number: " + userNumber);
                 Console.WriteLine();
+            }
+
+            static int CalculateResult(int value)
+            {
+                int calculated = value * 2;
+                return calculated;
             }
         }
     }
